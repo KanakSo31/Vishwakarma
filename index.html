@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOGO Offer Assignment Design</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>YAY! It's BOGO</h1>
+
+      <div class="details-select">
+        <label class="offer" onclick="hideShow()">
+          <div class="offer-content">
+            <span class="badge">30% Off</span>
+            <input type="radio" name="offer" value="18.00" checked />
+            <div class="offer-info">
+              <div>Buy 1 Get 2</div>
+              <div class="offer-price">$18.00 USD</div>
+            </div>
+          </div>
+        </label>
+        <div class="A" id="hide" id="A">
+          <div class="first">
+            <h5>Size</h5>
+            <label class="label_selector" for="size"></label>
+            <select id="size1">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+          </div>
+          <div class="second">
+            <h5>Colour</h5>
+            <label for="colour"></label>
+            <select id="colour1">
+              <option value="Black">Black</option>
+              <option value="White">White</option>
+              <option value="Blue">Blue</option>
+              <option value="Red">Red</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="details-select">
+        <label class="offer" onclick="hideShow()">
+          <div class="offer-content">
+            <span class="badge">30% Off</span>
+            <input type="radio" name="offer" value="24.00" />
+            <div class="offer-info">
+              <div>Buy 2 Get 4</div>
+              <div class="offer-price">$24.00 USD</div>
+            </div>
+          </div>
+          <div class="popular">Most Popular</div>
+        </label>
+        <div class="A" id="hide" id="A">
+          <div class="first">
+            <h5>Size</h5>
+            <label class="label_selector" for="size"></label>
+            <select id="size1">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+          </div>
+          <div class="second">
+            <h5>Colour</h5>
+            <label for="colour"></label>
+            <select id="colour1">
+              <option value="Black">Black</option>
+              <option value="White">White</option>
+              <option value="Blue">Blue</option>
+              <option value="Red">Red</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="details-select">
+        <label class="offer" onclick="hideShow()">
+          <div class="offer-content">
+            <span class="badge">10% Off</span>
+            <input type="radio" name="offer" value="36.00" />
+            <div class="offer-info">
+              <div>Buy 3 Get 6</div>
+              <div class="offer-price">
+                $36.00 USD <span class="over-line">$10.00 USD</span>
+              </div>
+            </div>
+          </div>
+        </label>
+        <div class="A" id="A" id="hide">
+          <div class="first">
+            <h5>Size</h5>
+            <label class="label_selector" for="size"></label>
+            <select id="size1">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+          </div>
+          <div class="second">
+            <h5>Colour</h5>
+            <label for="colour"></label>
+            <select id="colour1">
+              <option value="Black">Black</option>
+              <option value="White">White</option>
+              <option value="Blue">Blue</option>
+              <option value="Red">Red</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="details">
+        <label class="label_selector" for="size">Size</label>
+        <select id="size1">
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+        </select>
+        <label for="colour">Colour</label>
+        <select id="colour1">
+          <option value="Black">Black</option>
+          <option value="White">White</option>
+          <option value="Blue">Blue</option>
+          <option value="Red">Red</option>
+        </select>
+      </div> -->
+
+      <div class="total-count">
+        <div class="free-delivery">Free Delivery</div>
+        <div class="total">Total: $<span id="total">18.00</span> USD</div>
+      </div>
+      <button class="add-to-cart">+ Add to Cart</button>
+
+      <div class="powered-by">
+        Powered by <span class="company">Pumper</span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
